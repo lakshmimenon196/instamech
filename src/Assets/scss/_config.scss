@@ -1,0 +1,67 @@
+
+//definging color variables
+
+ $lightlavender : #F5F1F1;
+$lightbeige : #ECCFA4;
+$lightblue : #B6C3E8;
+$black : #010000;
+$white:#ffffff;
+$lightgrey:#333;
+$darkpurple:#0D022A;
+$lightpinkgrey:#F0E6E6;
+$lightbluewhite:#FBFBFB;
+$coffee:#E3C7AF;
+$skyblue:#cde2ed;
+$professionalblue:#B4BAE3;
+$darkblue:#2C19A5;
+$darkred:#AE3B02;
+$yellow:#FBE973;
+$purpleshadow:#DFC1E2;
+$darkpurpleshadow:#BEADC0;
+$lightskin:#FEEBCE;
+$warmgrey:#AFAAA5;
+//mixins
+@mixin translateY($e)
+{
+  -webkit-transform:translateY($e);
+  -moz-transform:translateY($e);
+  transform:translateY($e);
+}
+@mixin translateX($e)
+{
+  -webkit-transform:translateX($e);
+  -moz-transform:translateX($e);
+  transform:translateX($e);
+
+}
+@mixin transition($e)
+{
+    -webkit-transition:$e;
+      -moz-transition:$e;
+      transition:$e;
+}
+
+//styles
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+  color:$darkpurple;
+  font-weight:400;
+  font-style:normal;
+}
+a
+{
+  text-decoration:none !important;
+  @include transition(.4s ease-in-out);
+  cursor:pointer;
+  &:hover{
+      text-decoration:none !important;
+      color:$professionalblue;
+      @include transition(.5s ease-in-out);
+  }
+}
+.container-fluid
+{
+  //line-height: 24px;
+
+}
