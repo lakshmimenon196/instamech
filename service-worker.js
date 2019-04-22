@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/instamech/precache-manifest.37b722fe2d3a049fcab96bbd57c4daed.js"
+  "/instamech/precache-manifest.616094981981a37b192e7fa2188753fb.js"
 );
 
 workbox.clientsClaim();
